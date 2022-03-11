@@ -1,6 +1,6 @@
 import nmap3
-import json
 import argparse
+import nmap_parse as np
 
 # Objet nmap
 nmap = nmap3.Nmap()
@@ -37,6 +37,4 @@ print(target)
 # Arguments custom
 results = nmap.scan_top_ports(target, args="-sV -O")
 
-# Sortie vers json + indentation pour lisibilité
-with open("results.json", "w") as f:
-    json.dump(results, f, indent=4)
+services = np.get_services(target, results)
