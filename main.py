@@ -27,12 +27,12 @@ args = args_parser.parse_args()
 
 target = args.target
 
-# test args
-if args.tor:
-    print("tor activated")
+# # test args
+# if args.tor:
+#     print("tor activated")
 
-print(target)
-#####
+# print(target)
+# #####
 
 # Arguments custom
 results = nmap.scan_top_ports(target, args="-sV -O")

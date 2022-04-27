@@ -22,6 +22,3 @@ def get_services(target, output):
         index += 1
 
     return services
-    
-# print(json.dumps(services, indent=4))
-# print("\n\n")
