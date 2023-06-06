@@ -12,7 +12,7 @@ https://nmap.org/download.html
 
 ### Chrome webdriver
 Blackhole use Selenium and Chrome webdriver to retrieve exploits data from exploitdb.com  
-You need Chrome webdriver installed in your system PATH (fastet way is to put webdriver in %system32%), check your Chrome version and install the corresponding webdriver version :  
+You need Chrome webdriver installed in your system PATH (fastest way is to put webdriver in %system32%), check your Chrome version and install the corresponding webdriver version :  
 https://chromedriver.chromium.org/downloads
 
 ## Installation
