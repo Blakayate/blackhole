@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/svg" href="blackhole.svg" />
+    <link rel="stylesheet" href="./report.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="utf-8" />
+    <title>
+      Blackhole report
+    </title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="main-title">
+        Blackhole Report
+      </h1>
+    </div>
+    <div class="content">
+      <img src="blackhole.svg" alt="Blackhole logo" class="logo" />
+      <span class="target">
+        Target : gruyere.corp
+      </span>
+      <div class="section">
+        <div class="section-title">
+          <h3>Services Overview</h3>
+          <i onclick="toggleIcon(this)" class="fa fa-eye-slash"></i>
+        </div>
+        <div class="section-content">
+          <table id="services-overview" class="table">
+            <thead class="table-head">
+              <th>Name</th>
+              <th>Product</th>
+              <th>Version</th>
+              <th>Port</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ftp</td>
+                <td>vsftpd</td>
+                <td>2.3.4</td>
+                <td>21</td>
+              </tr>
+              <tr>
+                <td>ssh</td>
+                <td>OpenSSH</td>
+                <td>4.7p1</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>telnet</td>
+                <td>Linux telnetd</td>
+                <td></td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <td>smtp</td>
+                <td>Postfix smtpd</td>
+                <td></td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>http</td>
+                <td>Apache httpd</td>
+                <td>2.2.8</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>pop3</td>
+                <td></td>
+                <td></td>
+                <td>110</td>
+              </tr>
+              <tr>
+                <td>netbios-ssn</td>
+                <td>Samba smbd</td>
+                <td>3.X</td>
+                <td>139</td>
+              </tr>
+              <tr>
+                <td>https</td>
+                <td></td>
+                <td></td>
+                <td>443</td>
+              </tr>
+              <tr>
+                <td>netbios-ssn</td>
+                <td>Samba smbd</td>
+                <td>3.X</td>
+                <td>445</td>
+              </tr>
+              <tr>
+                <td>ms-wbt-server</td>
+                <td></td>
+                <td></td>
+                <td>3389</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">
+          <h3>CVEs</h3>
+          <i onclick="toggleIcon(this)" class="fa fa-eye"></i>
+        </div>
+        <div class="section-content disabled">
+          <div class="service-block">
+            <div class="section-title">
+              <h4 class="service-title">vsftpd 2.3.4</h4>
+              <i onclick="toggleSubIcon(this)" class="fa fa-eye"></i>
+            </div>
+            <div id="vsftpd 2.3.4" class="service-subcontent disabled">
+              <div id="CVE-2011-2523" class="service-comp">
+                <h5 class="exploit">CVE-2011-2523</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2011-2523">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V3</td>
+                      <td>9.8</td>
+                      <td>CRITICAL</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <table class="table">
+                  <thead>
+                    <th>Page URL</th>
+                    <th>Download link</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="https://www.exploit-db.com/exploits/49757">49757</a>
+                      </td>
+                      <td>
+                        <a href="https://www.exploit-db.com/download/49757">Download</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="https://www.exploit-db.com/exploits/17491">17491</a>
+                      </td>
+                      <td>
+                        <a href="https://www.exploit-db.com/download/17491">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="CVE-2011-0762" class="service-comp">
+                <h5 class="exploit">CVE-2011-0762</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2011-0762">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>4.0</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <table class="table">
+                  <thead>
+                    <th>Page URL</th>
+                    <th>Download link</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="https://www.exploit-db.com/exploits/16270">16270</a>
+                      </td>
+                      <td>
+                        <a href="https://www.exploit-db.com/download/16270">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="service-block">
+            <div class="section-title">
+              <h4 class="service-title">OpenSSH 4.7p1</h4>
+              <i onclick="toggleSubIcon(this)" class="fa fa-eye"></i>
+            </div>
+            <div id="OpenSSH 4.7p1" class="service-subcontent disabled">
+              <div id="CVE-2008-5161" class="service-comp">
+                <h5 class="exploit">CVE-2008-5161</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2008-5161">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>2.6</td>
+                      <td>LOW</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+            </div>
+          </div>
+          <div class="service-block">
+            <div class="section-title">
+              <h4 class="service-title">Linux telnetd </h4>
+              <i onclick="toggleSubIcon(this)" class="fa fa-eye"></i>
+            </div>
+            <div id="Linux telnetd " class="service-subcontent disabled">
+              <div id="CVE-2001-0554" class="service-comp">
+                <h5 class="exploit">CVE-2001-0554</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2001-0554">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>10.0</td>
+                      <td>HIGH</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <table class="table">
+                  <thead>
+                    <th>Page URL</th>
+                    <th>Download link</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="https://www.exploit-db.com/exploits/21018">21018</a>
+                      </td>
+                      <td>
+                        <a href="https://www.exploit-db.com/download/21018">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="CVE-2021-27171" class="service-comp">
+                <h5 class="exploit">CVE-2021-27171</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2021-27171">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V3</td>
+                      <td>9.8</td>
+                      <td>CRITICAL</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2000-1195" class="service-comp">
+                <h5 class="exploit">CVE-2000-1195</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2000-1195">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>7.5</td>
+                      <td>HIGH</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2020-8797" class="service-comp">
+                <h5 class="exploit">CVE-2020-8797</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2020-8797">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V3</td>
+                      <td>6.7</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-1999-0740" class="service-comp">
+                <h5 class="exploit">CVE-1999-0740</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-1999-0740">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>6.4</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2004-0911" class="service-comp">
+                <h5 class="exploit">CVE-2004-0911</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2004-0911">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>5.0</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2005-2040" class="service-comp">
+                <h5 class="exploit">CVE-2005-2040</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2005-2040">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>5.0</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+            </div>
+          </div>
+          <div class="service-block">
+            <div class="section-title">
+              <h4 class="service-title">Postfix smtpd </h4>
+              <i onclick="toggleSubIcon(this)" class="fa fa-eye"></i>
+            </div>
+            <div id="Postfix smtpd " class="service-subcontent disabled">
+              <div id="CVE-2005-0337" class="service-comp">
+                <h5 class="exploit">CVE-2005-0337</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2005-0337">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>7.5</td>
+                      <td>HIGH</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2011-1431" class="service-comp">
+                <h5 class="exploit">CVE-2011-1431</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2011-1431">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>6.8</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2004-0925" class="service-comp">
+                <h5 class="exploit">CVE-2004-0925</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2004-0925">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>5.0</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+            </div>
+          </div>
+          <div class="service-block">
+            <div class="section-title">
+              <h4 class="service-title">Apache httpd 2.2.8</h4>
+              <i onclick="toggleSubIcon(this)" class="fa fa-eye"></i>
+            </div>
+            <div id="Apache httpd 2.2.8" class="service-subcontent disabled">
+              <div id="CVE-2010-0408" class="service-comp">
+                <h5 class="exploit">CVE-2010-0408</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2010-0408">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>5.0</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2008-2364" class="service-comp">
+                <h5 class="exploit">CVE-2008-2364</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2008-2364">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>5.0</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+            </div>
+          </div>
+          <h4 class="service-title">pop3</h4>
+          <div class="service-block">
+            <div class="section-title">
+              <h4 class="service-title">Samba smbd 3.X</h4>
+              <i onclick="toggleSubIcon(this)" class="fa fa-eye"></i>
+            </div>
+            <div id="Samba smbd 3.X" class="service-subcontent disabled">
+              <div id="CVE-2015-5252" class="service-comp">
+                <h5 class="exploit">CVE-2015-5252</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2015-5252">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V3</td>
+                      <td>7.2</td>
+                      <td>HIGH</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2015-7560" class="service-comp">
+                <h5 class="exploit">CVE-2015-7560</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2015-7560">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V3</td>
+                      <td>6.5</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2009-1888" class="service-comp">
+                <h5 class="exploit">CVE-2009-1888</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2009-1888">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>5.8</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2013-4124" class="service-comp">
+                <h5 class="exploit">CVE-2013-4124</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2013-4124">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>5.0</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <table class="table">
+                  <thead>
+                    <th>Page URL</th>
+                    <th>Download link</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="https://www.exploit-db.com/exploits/27778">27778</a>
+                      </td>
+                      <td>
+                        <a href="https://www.exploit-db.com/download/27778">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="CVE-2011-0719" class="service-comp">
+                <h5 class="exploit">CVE-2011-0719</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2011-0719">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>5.0</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+            </div>
+          </div>
+          <h4 class="service-title">https</h4>
+          <div class="service-block">
+            <div class="section-title">
+              <h4 class="service-title">Samba smbd 3.X</h4>
+              <i onclick="toggleSubIcon(this)" class="fa fa-eye"></i>
+            </div>
+            <div id="Samba smbd 3.X" class="service-subcontent disabled">
+              <div id="CVE-2015-5252" class="service-comp">
+                <h5 class="exploit">CVE-2015-5252</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2015-5252">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V3</td>
+                      <td>7.2</td>
+                      <td>HIGH</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2015-7560" class="service-comp">
+                <h5 class="exploit">CVE-2015-7560</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2015-7560">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V3</td>
+                      <td>6.5</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2009-1888" class="service-comp">
+                <h5 class="exploit">CVE-2009-1888</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2009-1888">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>5.8</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+              <div id="CVE-2013-4124" class="service-comp">
+                <h5 class="exploit">CVE-2013-4124</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2013-4124">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>5.0</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <table class="table">
+                  <thead>
+                    <th>Page URL</th>
+                    <th>Download link</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="https://www.exploit-db.com/exploits/27778">27778</a>
+                      </td>
+                      <td>
+                        <a href="https://www.exploit-db.com/download/27778">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="CVE-2011-0719" class="service-comp">
+                <h5 class="exploit">CVE-2011-0719</h5>
+                <a class="cve_url" href="https://nvd.nist.gov/vuln/detail/CVE-2011-0719">NVD NIST Link</a>
+                <br />
+                <br />
+                <a>CVSS</a>
+                <table class="table">
+                  <thead>
+                    <th>CVSS Version</th>
+                    <th>Score</th>
+                    <th>Severity</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>V2</td>
+                      <td>5.0</td>
+                      <td>MEDIUM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="exploit">Exploits</h5>
+                <a>No exploits found for this CVE</a>
+              </div>
+            </div>
+          </div>
+          <h4 class="service-title">ms-wbt-server</h4>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">
+          <h3>Subdomains enumeration</h3>
+          <i onclick="toggleIcon(this)" class="fa fa-eye"></i>
+        </div>
+        <div class="section-content disabled">
+          <table id="subdomains" class="table">
+            <thead class="table-head">
+              <th>URLS</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>http://www.gruyere.corp</td>
+              </tr>
+              <tr>
+                <td>http://glpi.gruyere.corp</td>
+              </tr>
+              <tr>
+                <td>http://owncloud.gruyere.corp</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">
+          <h3>Bruteforce data</h3>
+          <i onclick="toggleIcon(this)" class="fa fa-eye"></i>
+        </div>
+        <div class="section-content disabled">
+          <table id="bruteforce" class="table">
+            <thead class="table-head">
+              <th>Credentials</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ftp : msfadmin:msfadmin@gruyere.corp:21</td>
+              </tr>
+              <tr>
+                <td>ssh : msfadmin:msfadmin@gruyere.corp:22</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="report.js"></script>
+</html>

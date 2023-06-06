@@ -1,0 +1,404 @@
+[
+    "gruyere.corp",
+    {
+        "name": "ftp",
+        "port": "21",
+        "product": "vsftpd",
+        "version": "2.3.4",
+        "cve": [
+            {
+                "id": "CVE-2011-2523",
+                "score": [
+                    "V3",
+                    9.8,
+                    "CRITICAL"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2011-2523",
+                "exploits": [
+                    {
+                        "exploitdb_link": "https://www.exploit-db.com/exploits/49757",
+                        "download_link": "https://www.exploit-db.com/download/49757"
+                    },
+                    {
+                        "exploitdb_link": "https://www.exploit-db.com/exploits/17491",
+                        "download_link": "https://www.exploit-db.com/download/17491"
+                    }
+                ]
+            },
+            {
+                "id": "CVE-2011-0762",
+                "score": [
+                    "V2",
+                    4.0,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2011-0762",
+                "exploits": [
+                    {
+                        "exploitdb_link": "https://www.exploit-db.com/exploits/16270",
+                        "download_link": "https://www.exploit-db.com/download/16270"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ssh",
+        "port": "22",
+        "product": "OpenSSH",
+        "version": "4.7p1",
+        "cve": [
+            {
+                "id": "CVE-2008-5161",
+                "score": [
+                    "V2",
+                    2.6,
+                    "LOW"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-5161",
+                "exploits": [
+                    "No data available"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "telnet",
+        "port": "23",
+        "product": "Linux telnetd",
+        "cve": [
+            {
+                "id": "CVE-2001-0554",
+                "score": [
+                    "V2",
+                    10.0,
+                    "HIGH"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2001-0554",
+                "exploits": [
+                    {
+                        "exploitdb_link": "https://www.exploit-db.com/exploits/21018",
+                        "download_link": "https://www.exploit-db.com/download/21018"
+                    }
+                ]
+            },
+            {
+                "id": "CVE-2021-27171",
+                "score": [
+                    "V3",
+                    9.8,
+                    "CRITICAL"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-27171",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2000-1195",
+                "score": [
+                    "V2",
+                    7.5,
+                    "HIGH"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2000-1195",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2020-8797",
+                "score": [
+                    "V3",
+                    6.7,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8797",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-1999-0740",
+                "score": [
+                    "V2",
+                    6.4,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-1999-0740",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2004-0911",
+                "score": [
+                    "V2",
+                    5.0,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2004-0911",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2005-2040",
+                "score": [
+                    "V2",
+                    5.0,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2005-2040",
+                "exploits": [
+                    "No data available"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "smtp",
+        "port": "25",
+        "product": "Postfix smtpd",
+        "cve": [
+            {
+                "id": "CVE-2005-0337",
+                "score": [
+                    "V2",
+                    7.5,
+                    "HIGH"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2005-0337",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2011-1431",
+                "score": [
+                    "V2",
+                    6.8,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2011-1431",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2004-0925",
+                "score": [
+                    "V2",
+                    5.0,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2004-0925",
+                "exploits": [
+                    "No data available"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "http",
+        "port": "80",
+        "product": "Apache httpd",
+        "version": "2.2.8",
+        "cve": [
+            {
+                "id": "CVE-2010-0408",
+                "score": [
+                    "V2",
+                    5.0,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2010-0408",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2008-2364",
+                "score": [
+                    "V2",
+                    5.0,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-2364",
+                "exploits": [
+                    "No data available"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pop3",
+        "port": "110",
+        "cve": []
+    },
+    {
+        "name": "netbios-ssn",
+        "port": "139",
+        "product": "Samba smbd",
+        "version": "3.X",
+        "cve": [
+            {
+                "id": "CVE-2015-5252",
+                "score": [
+                    "V3",
+                    7.2,
+                    "HIGH"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-5252",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2015-7560",
+                "score": [
+                    "V3",
+                    6.5,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-7560",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2009-1888",
+                "score": [
+                    "V2",
+                    5.8,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-1888",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2013-4124",
+                "score": [
+                    "V2",
+                    5.0,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-4124",
+                "exploits": [
+                    {
+                        "exploitdb_link": "https://www.exploit-db.com/exploits/27778",
+                        "download_link": "https://www.exploit-db.com/download/27778"
+                    }
+                ]
+            },
+            {
+                "id": "CVE-2011-0719",
+                "score": [
+                    "V2",
+                    5.0,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2011-0719",
+                "exploits": [
+                    "No data available"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "https",
+        "port": "443",
+        "cve": []
+    },
+    {
+        "name": "netbios-ssn",
+        "port": "445",
+        "product": "Samba smbd",
+        "version": "3.X",
+        "cve": [
+            {
+                "id": "CVE-2015-5252",
+                "score": [
+                    "V3",
+                    7.2,
+                    "HIGH"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-5252",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2015-7560",
+                "score": [
+                    "V3",
+                    6.5,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-7560",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2009-1888",
+                "score": [
+                    "V2",
+                    5.8,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-1888",
+                "exploits": [
+                    "No data available"
+                ]
+            },
+            {
+                "id": "CVE-2013-4124",
+                "score": [
+                    "V2",
+                    5.0,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-4124",
+                "exploits": [
+                    {
+                        "exploitdb_link": "https://www.exploit-db.com/exploits/27778",
+                        "download_link": "https://www.exploit-db.com/download/27778"
+                    }
+                ]
+            },
+            {
+                "id": "CVE-2011-0719",
+                "score": [
+                    "V2",
+                    5.0,
+                    "MEDIUM"
+                ],
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2011-0719",
+                "exploits": [
+                    "No data available"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ms-wbt-server",
+        "port": "3389",
+        "cve": []
+    },
+    {
+        "bruteforce": [
+            "ftp : msfadmin:msfadmin@gruyere.corp:21",
+            "ssh : msfadmin:msfadmin@gruyere.corp:22"
+        ]
+    },
+    {
+        "subdomains": [
+            "http://www.gruyere.corp",
+            "http://glpi.gruyere.corp",
+            "http://owncloud.gruyere.corp"
+        ]
+    }
+]

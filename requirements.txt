@@ -1,2 +1,6 @@
-python3-nmap
-colorama
+python3-nmap==1.5.1
+selenium==4.1.0
+airium==0.2.3
+colorama==0.4.3
+nvdlib==0.5.7
+paramiko==2.11.0
